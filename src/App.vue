@@ -1,19 +1,7 @@
 <template>
   
   <div id="app">
-    <hr>
-      <h4>Lista de produtos!</h4>
-    <hr>
-    <produto/>
-    <produto/>
-
-    <h1>
-      Guia Clientes
-      <cliente/>
-      <cliente/>
-      <cliente/>
-      <cliente/>
-    </h1>
+    <cliente/>
     
   </div>
 
@@ -21,12 +9,12 @@
 
 <script>
 import cliente from './components/cliente'
-import produto from './components/produto'
+//mport produto from './components/produto'
 export default {
   name: "App",
   components: {
     cliente,
-    produto
+    //produto
   }
 };
 </script>
