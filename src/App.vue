@@ -1,11 +1,11 @@
 <template>
   
   <div id="app">
-    <cliente :cliente="clienteVictor"/>
-    <cliente :cliente="clienteVictor"/>
-    <cliente :cliente="clienteVictor"/>
-    <cliente :cliente="clienteVictor"/>
-    <cliente :cliente="clienteVictor"/>
+    <cliente :cliente="clienteVictor" :showIdade="true"/>
+    <cliente :cliente="clienteVictor" :showIdade="true"/>
+    <cliente :cliente="clienteVictor" :showIdade="true" />
+    <cliente :cliente="clienteVictor" :showIdade="false"/>
+    <cliente :cliente="clienteVictor" :showIdade="true"/>
     
   </div>
 
@@ -22,7 +22,7 @@ export default {
       clienteVictor: {
         nome: "victor Nooblath",
         email: "Victor@gmail.com",
-        idade: 99
+        idade: 89
       }
     }
     
