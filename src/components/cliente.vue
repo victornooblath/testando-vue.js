@@ -1,10 +1,11 @@
 <template>
-    <div :class="{'cliente': false}">
+    <div :class="{'cliente': !isPremium, 'cliente-premium': isPremium}">
         <h4>Nome : {{cliente.nome}} </h4>
         <hr>
         <p>Email : {{cliente.email}}</p>
         <p v-if="showIdade == true">Idade : {{cliente.idade}}</p>
-        <p v-else>O usuário optou por esconder</p>
+        <p v-else>O usuário optou por esconder a idade</p>
+        
     </div>
     
     
@@ -15,7 +16,7 @@
 export default {
     data() {
         return {
-            
+            isPremium: false
         }
     },
     props: {
@@ -27,7 +28,7 @@ export default {
 
 <style scoped>
     .cliente {
-        background-color: #ECE5E3;
+        background-color: #bbb1ae;
         max-width: 600px;
         height: 180px;
         padding: 1%;
